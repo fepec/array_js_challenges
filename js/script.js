@@ -106,21 +106,36 @@ function challengeCuatro() {
   let masAlto = arrayEntrada[0];
 
   for (let i = 0; i < arrayEntrada.length; i++) {
-    console.log(`i: ${i} | aE: ${arrayEntrada[i]} | mA: ${masAlto} `)
+    console.log(`i: ${i} | aE: ${arrayEntrada[i]} | mA: ${masAlto} `);
     if (arrayEntrada[i] > masAlto) {
       masAlto = arrayEntrada[i];
- 
     }
   }
-  console.log(`El valor más alto es ${masAlto}`)
+  console.log(`El valor más alto es ${masAlto}`);
 }
 
 function challengeCinco() {
-  console.log("Ej5");
+  const arrayEntrada = [2, 4, 6, 8, 10];
+  let sumatoria = 0;
+
+  arrayEntrada.forEach((a) => {
+    sumatoria += a;
+  });
+  console.log(`La suma de todos los elementos es: ${sumatoria}`);
 }
+
 function challengeSeis() {
-  console.log("Ej6");
+  const arrayEntrada = [3, 7, 2, 8];
+  let arraySalida = [];
+
+  for (let i = 0; i < arrayEntrada.length; i++) {
+    arraySalida[i] = arrayEntrada[i] * 2;
+  }
+
+  console.log(arraySalida);
 }
+
+
 function challengeSiete() {
   console.log("Ej7");
 }
