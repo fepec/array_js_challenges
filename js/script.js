@@ -37,11 +37,15 @@ function challengeDos() {
 
 // Esta función pide los números sobre los cuales se hará la operación. Se utiliza en la función challengeTres().
 function getNumber(textoPrompt) {
-  let num = parseFloat(prompt(textoPrompt))
+  let num = parseFloat(prompt(textoPrompt));
   while (isNaN(num)) {
-    num = parseFloat(prompt(`¡OPCION ERRADA!\nPor favor ingrese sólo números.\nIntente de nuevo.\n${textoPrompt}`))
+    num = parseFloat(
+      prompt(
+        `¡OPCION ERRADA!\nPor favor ingrese sólo números.\nIntente de nuevo.\n${textoPrompt}`
+      )
+    );
   }
-  return num
+  return num;
 }
 
 function challengeTres() {
@@ -60,14 +64,14 @@ function challengeTres() {
       prompt(
         "¡OPCIÓN ERRADA!\n\nOPERACIONES MATEMATICAS BÁSICAS: \n Ingresa 1 para sumar. \n Ingresa 2 para restar. \n Ingresa 3 para multiplicar. \n Ingresa 4 para Dividir."
       )
-    ); 
-  } 
+    );
+  }
 
   // Pedimos los numeros
   let num1 = getNumber("Ingrese numero 1.");
   let num2 = getNumber("Ingrese numero 2.");
   let result = 0;
-  
+
   // Si todo lo anterior esta OK, hacemos las operationes matematicas
   switch (operation) {
     case 1:
@@ -93,9 +97,24 @@ function challengeTres() {
   }
 }
 
+/**
+ * Challenge 4: encontrar el número más grande en un array con for.
+ */
+
 function challengeCuatro() {
-  console.log("Ej4");
+  const arrayEntrada = [45, 23, 67, 89, 12, 56];
+  let masAlto = arrayEntrada[0];
+
+  for (let i = 0; i < arrayEntrada.length; i++) {
+    console.log(`i: ${i} | aE: ${arrayEntrada[i]} | mA: ${masAlto} `)
+    if (arrayEntrada[i] > masAlto) {
+      masAlto = arrayEntrada[i];
+ 
+    }
+  }
+  console.log(`El valor más alto es ${masAlto}`)
 }
+
 function challengeCinco() {
   console.log("Ej5");
 }
