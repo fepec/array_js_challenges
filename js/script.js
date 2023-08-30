@@ -6,7 +6,6 @@ const btnChallengeFive = document.getElementById("btnChallenge5");
 const btnChallengeSix = document.getElementById("btnChallenge6");
 const btnChallengeSeven = document.getElementById("btnChallenge7");
 const btnChallengeEight = document.getElementById("btnChallenge8");
-const btnChallengeNine = document.getElementById("btnChallenge9");
 
 function challengeUno() {
   console.log("Ej1");
@@ -32,9 +31,7 @@ function challengeSiete() {
 function challengeOcho() {
   console.log("Ej8");
 }
-function challengeNueve() {
-  console.log("Ej9");
-}
+
 
 btnChallengeOne.onclick = function () {
   challengeUno();
@@ -60,6 +57,4 @@ btnChallengeSeven.onclick = function () {
 btnChallengeEight.onclick = function () {
   challengeOcho();
 };
-btnChallengeNine.onclick = function () {
-  challengeNueve();
-};
+
