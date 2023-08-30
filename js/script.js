@@ -7,20 +7,30 @@ const btnChallengeSix = document.getElementById("btnChallenge6");
 const btnChallengeSeven = document.getElementById("btnChallenge7");
 const btnChallengeEight = document.getElementById("btnChallenge8");
 
+/**
+ * Challenge 1: Mostrar contenidos de array con for
+ * */
 function challengeUno() {
+  // Declarar array y poblarlo
   let frutas = ["albaricoque", "banano", "cereza", "dátil"];
-
+  // Correr FOR hasta el último elemento y mostrar contenido en consola.
   for (let index = 0; index < frutas.length; index++) {
     console.log(frutas[index]);
   }
 }
-function challengeDos() {
-  let frutas = ["albaricoque", "banano", "cereza", "dátil"];
 
+/**
+ * Challenge 2: Mostrar contenidos de array con forEach
+ */
+function challengeDos() {
+  // Declarar array y poblarlo.
+  let frutas = ["albaricoque", "banano", "cereza", "dátil"];
+  // Correr FOR hasta el último elemento y mostrar contenido en consola.
   frutas.forEach((f) => {
     console.log(f);
   });
 }
+
 function challengeTres() {
   console.log("Ej3");
 }
