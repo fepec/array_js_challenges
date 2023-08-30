@@ -103,10 +103,13 @@ function challengeTres() {
 
 function challengeCuatro() {
   const arrayEntrada = [45, 23, 67, 89, 12, 56];
+  // Variable para almacenar valor más alto.
   let masAlto = arrayEntrada[0];
 
+  // For para recorrer el array.
   for (let i = 0; i < arrayEntrada.length; i++) {
     console.log(`i: ${i} | aE: ${arrayEntrada[i]} | mA: ${masAlto} `);
+    // comparar valor almacenado con valor de array[i].
     if (arrayEntrada[i] > masAlto) {
       masAlto = arrayEntrada[i];
     }
@@ -114,8 +117,13 @@ function challengeCuatro() {
   console.log(`El valor más alto es ${masAlto}`);
 }
 
+/**
+ * Challenge 5: sumar los valores de un array con forEach
+ */
+
 function challengeCinco() {
   const arrayEntrada = [2, 4, 6, 8, 10];
+  // variable para almacenar resultado
   let sumatoria = 0;
 
   arrayEntrada.forEach((a) => {
@@ -123,6 +131,10 @@ function challengeCinco() {
   });
   console.log(`La suma de todos los elementos es: ${sumatoria}`);
 }
+
+/**
+ * Challenge 6: multiplicar cada elemento de un array por 2 y almacenar la respuesta en un nuevo array.
+ */
 
 function challengeSeis() {
   const arrayEntrada = [3, 7, 2, 8];
@@ -135,10 +147,23 @@ function challengeSeis() {
   console.log(arraySalida);
 }
 
-
+/**
+ * Challenge 7: crear un programa que sume los elementos pares.
+ */
 function challengeSiete() {
-  console.log("Ej7");
+  const arrayEntrada = [1, 4, 7, 3, 10, 12];
+  let sumaPares = 0;
+
+  arrayEntrada.forEach(a => {
+    if (a % 2 === 0) {
+      sumaPares += a;
+    }
+    
+  });
+
+  console.log(`La suma de los elementos pares es: ${sumaPares}`);
 }
+
 function challengeOcho() {
   console.log("Ej8");
 }
