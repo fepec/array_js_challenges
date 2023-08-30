@@ -8,10 +8,18 @@ const btnChallengeSeven = document.getElementById("btnChallenge7");
 const btnChallengeEight = document.getElementById("btnChallenge8");
 
 function challengeUno() {
-  console.log("Ej1");
+  let frutas = ["albaricoque", "banano", "cereza", "dátil"];
+
+  for (let index = 0; index < frutas.length; index++) {
+    console.log(frutas[index]);
+  }
 }
 function challengeDos() {
-  console.log("Ej2");
+  let frutas = ["albaricoque", "banano", "cereza", "dátil"];
+
+  frutas.forEach((f) => {
+    console.log(f);
+  });
 }
 function challengeTres() {
   console.log("Ej3");
@@ -31,7 +39,6 @@ function challengeSiete() {
 function challengeOcho() {
   console.log("Ej8");
 }
-
 
 btnChallengeOne.onclick = function () {
   challengeUno();
@@ -57,4 +64,3 @@ btnChallengeSeven.onclick = function () {
 btnChallengeEight.onclick = function () {
   challengeOcho();
 };
-
