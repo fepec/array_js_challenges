@@ -172,10 +172,12 @@ function challengeOcho() {
   let i = 0;
     
   while (i <= arrayEntrada.length)  {
+    // Condicional que mira si el valor de la posición i es mayor a 50.
     if (arrayEntrada[i] > 50) {
       console.log(
         `La posición ${i} | ${arrayEntrada[i]}, contiene el primer valor mayor a 50.`
       );
+      // Si valor es mayor a 50, break. Ya no necesitamos recorrer más. 
       break;      
     }
     console.log(`i: ${i} v: ${arrayEntrada[i]}`);
