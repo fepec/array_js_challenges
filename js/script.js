@@ -151,21 +151,36 @@ function challengeSeis() {
  * Challenge 7: crear un programa que sume los elementos pares.
  */
 function challengeSiete() {
-  const arrayEntrada = [1, 4, 7, 3, 10, 12];
+  const arrayEntrada = [1, 2, 7, 3, 10, 12];
   let sumaPares = 0;
 
-  arrayEntrada.forEach(a => {
+  arrayEntrada.forEach((a) => {
     if (a % 2 === 0) {
       sumaPares += a;
     }
-    
   });
 
   console.log(`La suma de los elementos pares es: ${sumaPares}`);
 }
 
+/**
+ * Challenge 8: encontrar el primer número mayor a 50 en un array usando while.
+ */
+
 function challengeOcho() {
-  console.log("Ej8");
+  const arrayEntrada = [30, 45, 60, 72, 48, 10];
+  let i = 0;
+    
+  while (i <= arrayEntrada.length)  {
+    if (arrayEntrada[i] > 50) {
+      console.log(
+        `La posición ${i} | ${arrayEntrada[i]}, contiene el primer valor mayor a 50.`
+      );
+      break;      
+    }
+    console.log(`i: ${i} v: ${arrayEntrada[i]}`);
+    i++;    
+  }
 }
 
 btnChallengeOne.onclick = function () {
